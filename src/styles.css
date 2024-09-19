@@ -1,4 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+	--primary-color: #ffffff;
+	--secondary-color: #007bff;
+	--text-color: #070707;
+	--hover-color: #0056b3;
+	--box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	--transition-duration: 0.3s;
+	--border-color: #3E4357; 
+	--card-background: #f9f9f9; 
+  }
+  
+
+  .dark-theme {
+	--primary-color: #333333;
+	--secondary-color: #1e90ff;
+	--text-color: #ffffff;
+	--hover-color: #63a4ff;
+	--border-color: #555555; 
+	--card-background: #444444; 
+	--box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  }
+
+
 *{
 	padding: 0;
 	margin: 0;
@@ -6,7 +29,15 @@
 	box-sizing: border-box;
 }
 
-body{
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(9,9,121,1) 100%);
-}
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color: var(--primary-color); 
+	color: var(--text-color); 
+	transition: background-color var(--transition-duration), color var(--transition-duration);
+  }
+
+.menu-bar__item ul li a {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+  }
